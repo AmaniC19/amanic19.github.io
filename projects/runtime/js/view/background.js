@@ -22,6 +22,7 @@
         // add objects for display inb ackground
         // called at the start of game and whenever the page is resized
         function render() {
+
             // useful variables
             var canvasWidth = app.canvas.width;
             var canvasHeight = app.canvas.height;
@@ -33,8 +34,14 @@
 
             // this fills the background with a obnoxious yellow
             // you should modify this to suit your game
-            var backgroundFill = draw.rect(canvasWidth,canvasHeight,'yellow');
-            background.addChild(backgroundFill);
+            /*var backgroundFill = draw.rect(canvasWidth,canvasHeight,'yellow');
+            background.addChild(backgroundFill);*/
+            
+            var backgroundBox;
+            backgroundBox = draw.rect(100,100,'Blue');
+            backgroundBox.x = 250;
+            backgroundBox.y = 215;
+            background.addChild(backgroundBox);
         }
         
         // Perform background animation

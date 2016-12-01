@@ -1,5 +1,5 @@
-<!doctype html>
-/* World 1 would
+<!doctype html> 
+/* World 1 would be like the moon. The gravity is changed and 1 bos and 1 mini boss.
 
 
 
@@ -45,9 +45,16 @@
         <script src="js/game.js"></script>
 
        <!-- add any additional scripts here -->
+       <script src="js/view/background.js"></script>
         <script src="js/view/hud.js"></script>
         <style type="text/css">
             /*override default styles here*/
+           body {
+               background: url(http://orig08.deviantart.net/328e/f/2016/205/3/c/mimikyu_by_tsaoshin-dab7fgk.png);
+                background-position:center;
+                background-repeat:no-repeat;
+                background-size:cover;
+           }
         </style>
     </head>
     <body>
@@ -89,6 +96,8 @@
                 ground = opspark.makeGround(app);
 
                 // TODO 2 : add background
+               var background = opspark.makeBackground(app, ground);
+                view.addChild(background);
                 
                 var help = draw.textfield('MOVES || w: jump | e: flying jump | s: duck | space: fire | q your mom!', 
                     '20px Arial',
