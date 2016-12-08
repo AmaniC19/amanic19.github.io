@@ -18,7 +18,10 @@
 
         // container which will be returned
         var background;
-        
+        var backgroundBox = draw.rect(100,100,'Blue');
+
+        var buildings = [];
+
         // add objects for display inb ackground
         // called at the start of game and whenever the page is resized
         function render() {
@@ -26,7 +29,7 @@
             // useful variables
             var canvasWidth = app.canvas.width;
             var canvasHeight = app.canvas.height;
-            var groundY = ground.y;
+            var groundY = ground.y + 100;
 
             background.removeAllChildren();
 
@@ -37,11 +40,19 @@
             /*var backgroundFill = draw.rect(canvasWidth,canvasHeight,'yellow');
             background.addChild(backgroundFill);*/
             
-            var backgroundBox;
-            backgroundBox = draw.rect(100,100,'Blue');
             backgroundBox.x = 250;
-            backgroundBox.y = 215;
-            background.addChild(backgroundBox);
+            backgroundBox.y = 225;
+            //background.addChild(backgroundBox);
+            
+            var buildingHeight = 300;
+            var building;
+            for (var i = 0;i < parseInt(Math.random()*50);++i){
+                building = draw.bitmap("img/clouds.png");
+                building.x = 200*i;
+                building.y = 0;
+                //background.addChild(building);
+                buildings.push(building);
+            }
         }
         
         // Perform background animation
@@ -51,8 +62,15 @@
             var canvasWidth = app.canvas.width;
             var canvasHeight = app.canvas.height;
             var groundY = ground.y;
-
+            backgroundBox.x = backgroundBox.x + 1;
+            if(backgroundBox.x < -100) {
+                backgroundBox.x = canvasWidth;
+            }
+            for (var i = 0; i < buildings.length; i++) {
+                buildings[i].x = buildings[i].x - 1;
+            }
         }
+
 
         background = new createjs.Container();
         background.resize = render;
