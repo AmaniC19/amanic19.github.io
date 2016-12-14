@@ -49,8 +49,8 @@
             for (var i = 0;i < parseInt(Math.random()*50);++i){
                 building = draw.bitmap("img/clouds.png");
                 building.x = 200*i;
-                building.y = 0;
-                //background.addChild(building);
+                building.y = 10;
+               background.addChild(building);
                 buildings.push(building);
             }
         }
