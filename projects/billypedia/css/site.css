@@ -81,3 +81,17 @@ main {
     border-color: rgba(255, 255, 255, 1);
     cursor: pointer; cursor: hand;
 }
+
+.list-recordings{
+    margin-top: 0;
+    -webkit-padding-start: 0;
+    list-style-type: none;
+}
+
+.recording{
+    
+}
+
+.image-recording{
+    
+}

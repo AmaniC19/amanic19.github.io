@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/custom.css" type="text/css" />
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="bower_components/notes/notes.js"></script>
+    <title>A Well of HTML</title>
+    <style type="text/css">
+        .comment-form {
+            margin: auto;
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;
+        }
+        .comment-form div + div {
+            margin-top: 1em;
+        }
+        .comment-form label {
+            display: inline-block;
+            width: 90px;
+            
+        }
+        .comment-form input, textarea {
+            font: 1em sans-serif;
+            width: 300px;
+            -moz-box-sizing: border-box;
+            border: 1px solid #999;
+        }
+        .comment-form input: focus, textarea: focus {
+            border-color: #000;
+        }
+        .comment-form textarea {
+            vertical-align: top;
+            height: 5em;
+            resize: vertical;
+        }
+        table {
+            margin: 20px;
+        }
+        table, th, td {
+            padding: 4px;
+            border: 1px solid red;
+        }
+        .flex-row {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 20px;
+            padding: 4px;
+        }
+        .grid-of-items {
+            margin: 20px;
+        }
+        .row-img{
+            margin: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container" class="container">
+        <!-- ALL YOUR MARKUP GOES BELOW HERE -->
+        <a href="https://en.wikipedia.org/wiki/Fairy_Tail">Fairy Tail</a></br>
+        <!--<img src="img/apple-in-grass.jpg"/> -->
+        <img src="/projects/well-of-html/img/apple-in-grass.jpg"/>
+                
+        <h1>Fairy Tail Origins</h1>
+            <p>Fairy Tail originated with 4 members. These members were very powerful and their names are: 
+            <i>Mavis, the guildmaster, Yuri Dreyar, Precht Gaebolg, and Warrod Sequen</i></p>
+        <h2>Fairy Tail Main Members</h2>
+            <p>Fairy Tail members consist of a lot of people. A few popular ones are: <b>Mirajane Strauss, Lisanna
+            Strauss, Elfman Strauss, Cana Alberona, Natsu Dragneel, Erza Scarlet, Gray Fullbuster, Lucy Heartfilia
+            Wendy Marvell</b>, and many many more.</p>
+        <h3>Fairy Tail Plot</h3>
+            <p>Fairy Tail's plot was about a girl named Lucy who really wanted to join Fairy Tail. She joined Fairy 
+            Tail and now is telling her stories of her time in Fairy Tail from her journal/diary.</p>
+        <h4>Fairy Tail Teams</h4>
+            <ul>
+                <li>Team Natsu</li>
+                    <ol>
+                        <li>Natsu Dragneel</li>
+                        <li>Gray Fullbuster</li>
+                        <li>Erza Scarlet</li>
+                        <li>Lucy Heartfilia</li>
+                        <li>Wendy Marvell</li>
+                        <li>Happy</li>
+                        <li>Carla</li>
+                    </ol>
+                <li>Thunder Legion</li>
+                    <ol>
+                        <li>Laxus Dreyar</li>
+                        <li>Freed Justine</li>
+                        <li>Evergreen</li>
+                        <li>Bickslow</li>
+                    </ol>
+                <li>Shadow Gear</li>
+                    <ol>
+                        <li>Levy McGarden</li>
+                        <li>Jet</li>
+                        <li>Droy</li>
+                    </ol>
+            </ul>
+        <h5>Fairy Tail S class Mages</h5>
+            <p>The S class mages of Fairy Tail are the strongest in the Fairy Tail guild and passed the 
+            S class advancment. These mages are: Gildarts Clive, Erza Scarlet, Laxus Dreyar and Mirajane Strauss.
+            </p>
+        <h6>Fairy Tail Ships</h6>
+            <p>Basically the relationships between to characters in the anime that would go well together if 
+            they dated.</p>
+            <small><em>NaLu, Gruvia, and GaLe</em></small>
+            
+        <form class='comment-form'>
+            <div>
+                <label for='name'>Name:</label>
+                <input type='text' id='name' />
+            </div>
+            <div>
+                <label for='mail'>E-mail:</label>
+                <input type='email' id='mail' />
+            </div>
+            <div>
+                <label for='comment'>Comment</label>
+                <textarea id='comment'></textarea>
+            </div>
+            
+            <div class='button'>
+                <button type='submit'>Send comment</button>
+            </div>
+        </form>
+        
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Fairy Tail Males</th>
+                    <th>Fairy Tail Females</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan='2'>Names of males and females ships in fairy tail</td>
+                </tr>
+            </tfoot>
+            <tbody>
+                <tr>
+                    <td>Natsu Dragneel</td>
+                    <td>Lucy Heartfilia</td>
+                </tr>
+                <tr>
+                    <td>Gray Fullbuster</td>
+                    <td>Juvia Lockser</td>
+                </tr>
+                <tr>
+                    <td>Gajeel Redfox</td>
+                    <td>Levy McGarden</td>
+                </tr>
+                <tr>
+                    <td>Elfman Strauss</td>
+                    <td>Evergreen</td>
+                </tr>
+                <tr>
+                    <td>Laxus Dreyar</td>
+                    <td>Mirajane Strauss</td>
+                </tr>
+                <tr>
+                    <td>Happy</td>
+                    <td>Carla</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div id='league-of-legends'>
+            <ul>
+                <li>Main Role: Mid</li>
+                <li>Favorite Champion: Katarina</li>
+                <li>Favorite LCS team: TSM</li>
+                <li>Favorite Pro Player: Bjergsen</li>
+            </ul>
+        </div>
+        <div id='beyblade-burst'>
+            <header>Beyblade Burst</header>
+                <strong>Beyblade is a spinning top game where 2 beys go at each other. A spin finish is 1 point
+                and an over finish is one point. Now in Beyblade Burst, beys can burst, which gives 2 points.
+                The first to 2 or 3 points wins.</strong>
+                <p>Beyblade Burst follows a kid name Valt. His beyblade name is Victory Valkyrie or God Valkyrie
+                in Beyblade Burst God. He is the protagonist in the show and tad bit of stupid. He has a lot of close
+                friends like Shu Kurenai and Rantaro Kiyama. Shu's beyblade is Storm Spriggan or Legend Spriggan
+                and Boss's, known as Rantaro, is named Rising Ragnarok or Blaze Ragnarok. Valt wants to be the best
+                and is determined to become the best. He is really stupid in the head, but is really good at Beyblading.</p>
+        </div>
+        <div id='nerd-pictures'>
+            <img src="http://media.nintendo.com/nintendo/cocoon/switch-static-pages/switch/etRgxnAu0zRX4bmWnt9K628wG7YQUI6t/images/switch/buy-now/bundle_color_console.jpg"/>
+            <img src="https://blogs-images.forbes.com/erikkain/files/2017/02/zelda.jpg width:"/>
+            <img src="http://images5.fanpop.com/image/photos/28900000/Ryuga-ryuga-kowalski-28926084-640-360.jpg"/>
+            <img src="http://orig10.deviantart.net/51de/f/2014/094/7/f/sonic_shadow_and_silver___wallpaper_by_sonicthehedgehogbg-d7d0zmj.jpg"/>
+        </div>
+        <div id='tales-of-links'>
+            <a href="http://aselia.wikia.com/wiki/Tales_of_Berseria">Tales of Bersia</a>
+            <a href="http://aselia.wikia.com/wiki/Tales_of_Symphonia">Tales of Symphonia</a>
+            <a href="http://aselia.wikia.com/wiki/Tales_of_Xillia_2">Tales of Xillia 2</a>
+            <a href="http://aselia.wikia.com/wiki/Tales_of_Vesperia">Tales of Vesperia</a>
+        </div>
+        <div id='quote-images'>
+            <img src="http://pm1.narvii.com/5778/99dde91f8560390cdbec6cbd361dda277d0e445e_hq.jpg"/>
+            <img src="https://s-media-cache-ak0.pinimg.com/originals/57/89/a7/5789a7318c96b1091683c51bd820d64a.jpg"/>
+            <img src="http://68.media.tumblr.com/cbfc7ceb8fab8ea82e2f1653d5533387/tumblr_muzazcIegN1qe9qnho1_500.jpg"/>
+            <img src="http://p1.i.ntere.st/94f9328ddca7057e8764f115eb552fb9_480.jpg"/>
+        </div>
+        
+        
+        <div class='flex-row'>
+            <div>One</div>
+            <div>Two</div>
+            <div>Three</div>
+            <div>Four</div>
+            <div>Five</div>
+        </div>
+        
+        <div class='grid-of-items'>
+            <div class='row'>
+                <div class='col-md-2'><img src="http://k05.kn3.net/1D258FCF6.png"/></div>
+                <div class="col-md-10">The Chaos Emeralds are used to make Sonic go Super Sonic</div>
+            </div>
+            <div class='row'>
+                <div class='col-md-2'><img src="http://vignette1.wikia.nocookie.net/ssb/images/f/f3/SmashBall.png/revision/latest?cb=20140328222600"/></div>
+                <div class='col-md-10'>The Smash Ball is used to give the characters their Ultimate in Super Smash Bros.</div>
+            </div>
+        </div>
+        <!-- ALL YOUR MARKUP GOES ABOVE HERE -->
+    </div>
+    <script>
+        $(function () {
+            window.opspark.notes.show();
+        });
+    </script>
+</body>
+
+</html>
